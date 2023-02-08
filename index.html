@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/5384685fcb.js" crossorigin="anonymous"></script>
+    <title>To-Do-app</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main-container">
+        <div class="header-content">
+          <div class="main-heading" id="main-heading">
+
+            <span id="backbtn">Back</span>
+
+            <h1 id="mainh1" style="display: inline-block;">Task 
+            <span style="font-weight: 40" >List</span>
+         </h1>
+
+         <span id="middletxt"> </span>
+         
+      </div>
+          <div id="mainh2">
+            <span><i class="fas fa-plus-circle" onclick="addTaskInput()"></i></span>
+            <span id="add-task-name"> Add Item</span>
+          </div>
+        </div><br><br>
+        <div id="noItemMsg">
+          <p>No Item in the todo list</p>
+        </div>
+        <div id="list-container"></div>
+      </div>
+
+      <!-- Add New List -->
+
+      <div id="task-input-container">
+     <div class="task-input-heading">
+     <h1>Add New Item</h1>
+     </div>
+     <div> 
+       <input type="text" name="ListName" id="list" placeholder="Add New Item" />
+     </div>
+     <br />
+    <div class="task-input-button">
+          <p id="addbtn" onclick="addDataObj()">ADD</p>
+          <p id="closebtn" onclick="closeDataObj()">Close</p>
+        </div>
+      </div>
+      
+       <!-- Add New item -->
+
+      <div id="minitask-input-container">
+        <div class="task-input-heading">
+          <h1>Add New List</h1>
+        </div>
+        <div>
+          <input type="text" name="ListName" id="minilist" placeholder="Add New List" />
+        </div>
+        <br />
+        <div class="task-input-button">
+          <p id="miniaddbtn">ADD</p>
+          <p id="btn2">Close</p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
